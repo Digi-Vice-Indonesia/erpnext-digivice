@@ -109,7 +109,7 @@ calendars = ["Task", "Work Order", "Sales Order", "Holiday List", "ToDo"]
 website_generators = ["BOM", "Sales Partner"]
 
 website_context = {
-	"favicon": "/assets/erpnext/images/digivice_favicon.jpeg",
+	"favicon": "/assets/erpnext/images/digivice_favico.ico",
 	"splash_image": "/assets/erpnext/images/digivice_splash.png",
 }
 
@@ -666,3 +666,10 @@ default_log_clearing_doctypes = {
 export_python_type_annotations = True
 
 fields_for_group_similar_items = ["qty", "amount"]
+
+jinja = {
+	"methods": [
+		"erpnext.utilities.print_format_utils.get_address_and_contact",
+		"erpnext.utilities.print_format_utils.get_company_address",
+	]
+}
